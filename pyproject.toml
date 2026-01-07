@@ -1,0 +1,27 @@
+[project]
+name = "gmf-net"
+version = "0.0.1"
+requires-python = ">=3.12,<=3.13"
+dependencies = [
+    "tqdm",
+    "pandas",
+    "psutil",
+    "matplotlib",
+    "scikit-learn",
+    "torch==2.9.1",
+]
+
+[tool.uv.sources.torch]
+index = "pytorch-cu130"
+
+[tool.uv.sources.torchvision]
+index = "pytorch-cu130"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
