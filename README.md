@@ -46,11 +46,14 @@ GMF-Net/
 │       ├── metrics.py           # 评估指标
 │       └── visualization.py     # 可视化工具
 │
+├── datasets/                    # 数据集目录
 ├── cluster/                     # 原始聚类模块（参考实现）
-├── data/                        # 数据目录
-├── results/                     # 结果保存目录
+├── .gitignore                   # Git忽略配置
+├── pyproject.toml               # 项目配置
 ├── README.md                    # 项目说明文档
-└── requirements.txt             # 依赖列表
+├── requirements.txt             # 依赖列表
+├── run.bat                      # 启动脚本
+└── uv.lock                      # uv锁定文件
 ```
 
 ## 环境要求
